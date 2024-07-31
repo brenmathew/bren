@@ -108,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
       const projectTitle = projectItem.querySelector(".project-title")?.textContent || "No title";
-      const projectImage = projectItem.querySelector("img")?.src || "";
       const modalContainer = document.getElementById("project-modal");
 
       if (!modalContainer) {
@@ -118,30 +117,48 @@ document.addEventListener("DOMContentLoaded", function() {
 
       console.log("Opening modal for:", projectTitle);
 
-      // Initialize variables
-      let modalDescription;
-      let newImageSrc;
-      let projectLink;
+      let modalDescription, newImageSrc, additionalDescription, projectLink;
 
-      // Populate modal with specific project details
       if (projectTitle === "Super Market sales analysis") {
-        modalDescription = "This project analyzes supermarket sales data to gain insights into product performance, customer behavior, and revenue trends. By understanding the provided dataset (supermarket_sales.csv), it aims to deliver valuable visualizations and information to improve sales strategies and decision-making.";
-        newImageSrc = "assets/images/project-09.png";
+        modalDescription = "This project analyzes supermarket sales data to gain insights into product performance, customer behavior, and revenue trends.";
+        newImageSrc = "./assets/images/project-09.png";
+        additionalDescription = `
+          <p class="blog-description">Below are some following questions analyzed on this dataset:</p>
+          <p class="blog-description">• What are the most selling Products?</p>
+          <p class="blog-description">• Which are the top 10 Products according to Sales?</p>
+          <p class="blog-description">• Which Products have proved to be the most profitable?</p>
+          <p class="blog-description">• What category sold the most?</p>
+          <p class="blog-description">• Which category is the most Profitable?</p>
+          <p class="blog-description">• What are the most selling products in each subcategory?</p>
+          <p class="blog-description">• Which customer segments are the most profitable?</p>
+          <p class="blog-description">• Which Shipping modes sold the most products?</p>
+          <p class="blog-description">• What markets sold the most Products?</p>
+          <p class="blog-description">• Which are the top 10 countries by sales?</p>
+          <p class="blog-description">• What's the average shipping cost for the top 10 different countries?</p>
+        `;
         projectLink = "https://github.com/brenmathew/Data-Analysis/blob/main/SuperMarketSales_Analysis.ipynb";
       } else if (projectTitle === "Netflix") {
-        modalDescription = "The following is a Netflix Analysis of various TV Shows and Movies which is acquired from a data set through Kaggle. We can see the description and genres of movies all at once through this dashboard.";
-        newImageSrc = "assets/images/project-20.png";
+        modalDescription = "The following is a Netflix Analysis of various TV Shows and Movies acquired from a dataset through Kaggle. We can see the description and genres of movies all at once through this dashboard.";
+        newImageSrc = "./assets/images/project-20.png";
+        additionalDescription = `
+          <p class="blog-description">This project is for Netflix.</p>
+          <p class="blog-description">Just Netflix</p>
+        `;
         projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/NetflixAnalysis_16769869059570/Netflix";
       } else {
         modalDescription = `Detailed description of ${projectTitle}.`;
-        newImageSrc = projectImage; // Use original project image
-        projectLink = "https://github.com/brenmathew"; // Default link
+        newImageSrc = projectItem.querySelector("img")?.src || "";
+        additionalDescription = "";
+        projectLink = "https://github.com/brenmathew";
       }
 
+      // Populate modal with specific project details
       modalContainer.classList.add("active");
       modalContainer.querySelector(".portfolio-modal-title").textContent = projectTitle;
+      modalContainer.querySelector(".modal-date").textContent = projectTitle === "Netflix" ? "Link to the entire code below:" : "14 June, 2021";
       modalContainer.querySelector(".portfolio-modal-content").textContent = modalDescription;
       modalContainer.querySelector(".modal-image img").src = newImageSrc;
+      modalContainer.querySelector(".additional-content").innerHTML = additionalDescription;
 
       // Update project link button
       const projectLinkButton = modalContainer.querySelector(".project-link-button");
@@ -174,6 +191,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
 
 
 
