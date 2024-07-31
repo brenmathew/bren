@@ -128,9 +128,9 @@ document.addEventListener("DOMContentLoaded", function() {
         modalDescription = "This project analyzes supermarket sales data to gain insights into product performance, customer behavior, and revenue trends. By understanding the provided dataset (supermarket_sales.csv), it aims to deliver valuable visualizations and information to improve sales strategies and decision-making.";
         newImageSrc = "assets/images/project-09.png";
         projectLink = "https://github.com/brenmathew/Data-Analysis/blob/main/SuperMarketSales_Analysis.ipynb";
-      } else if (projectTitle === "Netflix Analysis") {
+      } else if (projectTitle === "Netflix") {
         modalDescription = "The following is a Netflix Analysis of various TV Shows and Movies which is acquired from a data set through Kaggle. We can see the description and genres of movies all at once through this dashboard.";
-        newImageSrc = "assets/images/project-21.png";
+        newImageSrc = "assets/images/project-20.png";
         projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/NetflixAnalysis_16769869059570/Netflix";
       } else {
         modalDescription = `Detailed description of ${projectTitle}.`;
