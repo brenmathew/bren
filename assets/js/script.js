@@ -117,12 +117,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
       console.log("Opening modal for:", projectTitle);
 
-      let modalDescription, newImageSrc, additionalDescription, projectLink;
+      let modalDescription, newImageSrc, additionalContent, projectLink;
 
       if (projectTitle === "Super Market sales analysis") {
         modalDescription = "This project analyzes supermarket sales data to gain insights into product performance, customer behavior, and revenue trends.";
         newImageSrc = "./assets/images/project-09.png";
-        additionalDescription = `
+        additionalContent = `
+          <div class="blog-image">
+            <img src="./assets/images/project-11.png" alt="Additional Image" loading="lazy">
+          </div>
           <p class="blog-description">Below are some following questions analyzed on this dataset:</p>
           <p class="blog-description">• What are the most selling Products?</p>
           <p class="blog-description">• Which are the top 10 Products according to Sales?</p>
@@ -135,20 +138,31 @@ document.addEventListener("DOMContentLoaded", function() {
           <p class="blog-description">• What markets sold the most Products?</p>
           <p class="blog-description">• Which are the top 10 countries by sales?</p>
           <p class="blog-description">• What's the average shipping cost for the top 10 different countries?</p>
+          <div class="blog-image">
+            <img src="./assets/images/project-12.png" alt="Another Image" loading="lazy">
+          </div>
         `;
         projectLink = "https://github.com/brenmathew/Data-Analysis/blob/main/SuperMarketSales_Analysis.ipynb";
       } else if (projectTitle === "Netflix") {
         modalDescription = "The following is a Netflix Analysis of various TV Shows and Movies acquired from a dataset through Kaggle. We can see the description and genres of movies all at once through this dashboard.";
         newImageSrc = "./assets/images/project-20.png";
-        additionalDescription = `
-          <p class="blog-description">This project is for Netflix.</p>
-          <p class="blog-description">Just Netflix</p>
+        additionalContent = `
+          <div class="blog-image">
+            <img src="./assets/images/project-21.png" alt="Additional Image" loading="lazy">
+          </div>
+          <p class="blog-description">This project is for Netflix. Below are the key insights:</p>
+          <p class="blog-description">• Analyze TV shows and movie genres</p>
+          <p class="blog-description">• Interactive dashboard to filter data</p>
+          <p class="blog-description">• Comprehensive overview of Netflix's content library</p>
+          <div class="blog-image">
+            <img src="./assets/images/project-22.png" alt="Another Image" loading="lazy">
+          </div>
         `;
         projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/NetflixAnalysis_16769869059570/Netflix";
       } else {
         modalDescription = `Detailed description of ${projectTitle}.`;
         newImageSrc = projectItem.querySelector("img")?.src || "";
-        additionalDescription = "";
+        additionalContent = "";
         projectLink = "https://github.com/brenmathew";
       }
 
@@ -158,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function() {
       modalContainer.querySelector(".modal-date").textContent = projectTitle === "Netflix" ? "Link to the entire code below:" : "14 June, 2021";
       modalContainer.querySelector(".portfolio-modal-content").textContent = modalDescription;
       modalContainer.querySelector(".modal-image img").src = newImageSrc;
-      modalContainer.querySelector(".additional-content").innerHTML = additionalDescription;
+      modalContainer.querySelector(".additional-content").innerHTML = additionalContent;
 
       // Update project link button
       const projectLinkButton = modalContainer.querySelector(".project-link-button");
