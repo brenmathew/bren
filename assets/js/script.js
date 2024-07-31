@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const modalContainer = document.getElementById("project-modal");
 
       if (!modalContainer) {
-        console.error(`Modal not found.`);
+        console.error("Modal not found.");
         return;
       }
 
@@ -121,13 +121,34 @@ document.addEventListener("DOMContentLoaded", function() {
       // Populate modal with specific project details
       modalContainer.classList.add("active");
       modalContainer.querySelector(".portfolio-modal-title").textContent = projectTitle;
-      modalContainer.querySelector(".modal-date").textContent = "Link to the entire code below"; // Example date
-      modalContainer.querySelector(".portfolio-modal-content").textContent = `Detailed description of ${projectTitle}.`;
-      modalContainer.querySelector(".modal-image img").src = projectImage;
+      
+      // Set the modal content based on project title
+      let modalDescription;
+      let newImageSrc;
+      let projectLink;
+
+      if (projectTitle === "Super Market sales analysis") {
+        modalDescription = "This project analyzes supermarket sales data to gain insights into product performance, customer behavior, and revenue trends. 
+          By understanding the provided dataset (supermarket_sales.csv),
+          it aims to deliver valuable visualizations and information to improve sales strategies and decision-making.";
+        newImageSrc = "assets/images/project-20.png";
+        projectLink = "https://github.com/brenmathew/Data-Analysis/blob/main/SuperMarketSales_Analysis.ipynb";
+      } else if (projectTitle === "Orizon") {
+        modalDescription = "As you hover over the dashboard, you make the changes, adjust your preferences to see the exact statistics of the data needed.";
+        newImageSrc = "assets/images/project-2.png";
+        projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/NetflixAnalysis_16769869059570/Netflix";
+      } else {
+        modalDescription = `Detailed description of ${projectTitle}.`;
+        newImageSrc = projectImage; // Use original project image
+        projectLink = "https://github.com/brenmathew"; // Default link
+      }
+
+      modalContainer.querySelector(".portfolio-modal-content").textContent = modalDescription;
+      modalContainer.querySelector(".modal-image img").src = newImageSrc;
 
       // Update project link button
       const projectLinkButton = modalContainer.querySelector(".project-link-button");
-      projectLinkButton.href = "https://github.com/brenmathew"; // Replace with dynamic URL if needed
+      projectLinkButton.href = projectLink;
 
       const closeButton = modalContainer.querySelector(".portfolio-modal-close-btn");
       closeButton.onclick = function() {
@@ -156,6 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
 
 // Page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
