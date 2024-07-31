@@ -136,8 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
       } else if (projectTitle === "Netflix") {
         modalDescription = "As you hover over the dashboard, you make the changes, adjust your preferences to see the exact statistics of the data needed.";
         newImageSrc = "assets/images/project-21.png";
-        modalDescription = "The following is a Netflix Analysis of various TV Shows and Movies which is acquired from a data set through Kaggle. 
-          We can see the description and genres of movies all at once through this dashboard.";
+        
         projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/NetflixAnalysis_16769869059570/Netflix";
       } else {
         modalDescription = `Detailed description of ${projectTitle}.`;
