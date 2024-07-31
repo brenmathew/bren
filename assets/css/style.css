@@ -1284,6 +1284,15 @@ main {
   transform: scale(1.07); /* Slightly enlarge on hover */
 }
 
+.modal-image img {
+  width: 100%; /* Ensures the image takes the full width of its container */
+  height: auto; /* Maintains the aspect ratio */
+  max-width: 600px; /* Set a maximum width to control size */
+  display: block; /* Removes any inline or padding spacing */
+  margin: 0 auto; /* Centers the image */
+}
+
+
 
 /* Styles over */ 
 
