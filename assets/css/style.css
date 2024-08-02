@@ -987,9 +987,6 @@ main {
 
 .project-item-icon-box {
   --scale: 0.8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }	
 
   background: var(--jet);
