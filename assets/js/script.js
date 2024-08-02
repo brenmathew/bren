@@ -161,8 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
         projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/NetflixAnalysis_16769869059570/Netflix";
       } 
       else if (projectTitle === "Customer Analysis") {
-        modalDescription = "The following is a dashboard created on customer analysis for an E-commerce website.
-          The visuals can be categorized based on sales from each state, revenue generated, and the various products purchased.";
+        modalDescription = "The following is a dashboard created on customer analysis for an E-commerce website. The visuals can be categorized based on sales from each state, revenue generated, and the various products purchased.";
         newImageSrc = "./assets/images/project-50.png";
         additionalContent = `
           <div class="blog-image">
@@ -178,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
         projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/CustomerAnalysis_16883802377440/Dashboard1";
       }
-else {
+      else {
         modalDescription = `Detailed description of ${projectTitle}.`;
         newImageSrc = projectItem.querySelector("img")?.src || "";
         additionalContent = "";
