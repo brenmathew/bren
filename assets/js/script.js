@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Populate modal with specific project details
       modalContainer.classList.add("active");
       modalContainer.querySelector(".portfolio-modal-title").textContent = projectTitle;
-      modalContainer.querySelector(".modal-date").textContent = projectTitle === "Netflix" ? "Link to the entire code below:" : "14 June, 2021";
+      modalContainer.querySelector(".modal-date").textContent = projectTitle === "Netflix" ? "Link to the entire project below:";
       modalContainer.querySelector(".portfolio-modal-content").textContent = modalDescription;
       modalContainer.querySelector(".modal-image img").src = newImageSrc;
       modalContainer.querySelector(".additional-content").innerHTML = additionalContent;
