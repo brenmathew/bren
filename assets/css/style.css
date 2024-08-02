@@ -987,8 +987,9 @@ main {
 
 .project-item-icon-box {
   --scale: 0.8;
-  width: 50px; /* Desired width */
-  height: 50px; /* Desired height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }	
 
   background: var(--jet);
@@ -1012,8 +1013,6 @@ main {
 
 .project-item-icon-box ion-icon 
 { --ionicon-stroke-width: 50px; 
-  /* Adjust the font size to scale the icon */
-  font-size: 40px; /* Desired font size */
 } 
 
 .project-img img {
