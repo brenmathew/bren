@@ -199,6 +199,24 @@ document.addEventListener("DOMContentLoaded", function() {
         projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/CustomerAnalysis_16883802377440/Dashboard1";
         break;
           
+       case "Fraud Detection":
+        modalDescription = "This project includes a collection of scripts and modules that handle various aspects of fraud detection, including data preprocessing, model training, evaluation, and prediction. It aims to provide an end-to-end solution for fraud detection tasks.";
+        newImageSrc = "./assets/images/fraud-detection.png"; // Ensure the image path is correct
+        additionalContent = `
+          <div class="blog-image">
+            <img src="./assets/images/fraud-detection-details.png" alt="Fraud Detection Details" loading="lazy">
+          </div>
+          <p class="blog-description">Key insights:</p>
+          <ul class="blog-description">
+            <li>• Random Forest Classifier with 0.999 accuracy.</li>
+            <li>• Important features: transaction amount, balances.</li>
+            <li>• Prevention: behavior monitoring, transaction limits.</li>
+            <li>• Track fraud rates to assess prevention effectiveness.</li>
+          </ul>
+        `;
+        projectLink = "https://github.com/brenmathew/Fraud_Detection/tree/main";
+        break;   
+          
         default:
           modalDescription = `Detailed description of ${projectTitle}.`;
           newImageSrc = projectItem.querySelector("img")?.src || "";
