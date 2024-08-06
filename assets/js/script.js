@@ -208,9 +208,8 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
           <p class="blog-description">Key insights:</p>
           <ul class="blog-description">
-            <li>• Random Forest Classifier with 0.999 accuracy.</li>
+            <li>• Used Random Forest Classifier to achieve high accuracy</li>
             <li>• Important features: transaction amount, balances.</li>
-            <li>• Prevention: behavior monitoring, transaction limits.</li>
             <li>• Track fraud rates to assess prevention effectiveness.</li>
           </ul>
           <div class="blog-image">
