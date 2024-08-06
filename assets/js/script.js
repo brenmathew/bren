@@ -201,10 +201,10 @@ document.addEventListener("DOMContentLoaded", function() {
           
        case "Fraud Detection":
         modalDescription = "This project includes a collection of scripts and modules that handle various aspects of fraud detection, including data preprocessing, model training, evaluation, and prediction. It aims to provide an end-to-end solution for fraud detection tasks.";
-        newImageSrc = "./assets/images/fraud-detection.png"; // Ensure the image path is correct
+        newImageSrc = "./assets/images/project-60.png";
         additionalContent = `
           <div class="blog-image">
-            <img src="./assets/images/fraud-detection-details.png" alt="Fraud Detection Details" loading="lazy">
+            <img src="./assets/images/project-61.png" alt="Fraud Detection Details" loading="lazy">
           </div>
           <p class="blog-description">Key insights:</p>
           <ul class="blog-description">
@@ -213,6 +213,9 @@ document.addEventListener("DOMContentLoaded", function() {
             <li>• Prevention: behavior monitoring, transaction limits.</li>
             <li>• Track fraud rates to assess prevention effectiveness.</li>
           </ul>
+          <div class="blog-image">
+            <img src="./assets/images/project-62.png" alt="More Fraud Detection Details" loading="lazy">
+          </div>
         `;
         projectLink = "https://github.com/brenmathew/Fraud_Detection/tree/main";
         break;   
