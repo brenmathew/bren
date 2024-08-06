@@ -159,7 +159,27 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
         `;
         projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/NetflixAnalysis_16769869059570/Netflix";
-      } else {
+      } else if (projectTitle === "Fabric Defect Detection") {
+        modalDescription = "The approach used here is based on image segmentation, which involves partitioning the image into different
+        regions based on their visual characteristics. Here's a code snippet below";
+        newImageSrc = "./assets/images/project-40.png";
+        additionalContent = `
+          <div class="blog-image">
+            <img src="./assets/images/project-41.png" alt="Additional Image" loading="lazy">
+          </div>
+          <p class="blog-description">Benefits:</p>
+          <p class="blog-description">• Quality Control in Textile Industry</p>
+          <p class="blog-description">• Efficient Fabric Inspection</p>
+          <p class="blog-description">• Reduced Fabric Waste</p>
+          <p class="blog-description">• Improved Product Quality</p>
+          <div class="blog-image">
+            <img src="./assets/images/project-42.png" alt="Another Image" loading="lazy">
+          </div>
+        `;
+        projectLink = "https://github.com/brenmathew/Fabric_Defect_detection";
+      }
+      
+        else {
         modalDescription = `Detailed description of ${projectTitle}.`;
         newImageSrc = projectItem.querySelector("img")?.src || "";
         additionalContent = "";
