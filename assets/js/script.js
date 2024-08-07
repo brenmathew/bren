@@ -271,9 +271,9 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
           <p class="blog-description">Goals achieved:</p>
           <ul class="blog-description">
-            <li>• **Integration of SpeechRecognition Library**: Incorporated the SpeechRecognition library to facilitate the conversion of speech to text.</li>
-            <li>• **Audio Input Handling**: Implemented functionality to handle both microphone input and pre-recorded audio files for transcription.</li>
-            <li>• **Speech Recognition Engine Selection**: Enabled users to choose from various speech recognition engines to enhance flexibility and accuracy.</li>
+            <li>• Integration of SpeechRecognition Library: Incorporated the SpeechRecognition library to facilitate the conversion of speech to text.</li>
+            <li>• Audio Input Handling: Implemented functionality to handle both microphone input and pre-recorded audio files for transcription.</li>
+            <li>• Speech Recognition Engine Selection: Enabled users to choose from various speech recognition engines to enhance flexibility and accuracy.</li>
           </ul>
           <div class="blog-image">
             <img src="./assets/images/project-92.png" alt="More Details" loading="lazy">
