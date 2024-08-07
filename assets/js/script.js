@@ -220,8 +220,7 @@ document.addEventListener("DOMContentLoaded", function() {
         break;   
 
         case "Web Scraping":
-        modalDescription = "The purpose of the following project is to scrape data from the list of websites provided in an Excel file,
-          calculating the positive and negative score based on predefined set of values and extracting the articles to an output Excel file.";
+        modalDescription = "The purpose of the following project is to scrape data from the list of websites provided in an Excel file, calculating the positive and negative score based on predefined set of values and extracting the articles to an output Excel file.";
         newImageSrc = "./assets/images/project-70.png";
         additionalContent = `
           <div class="blog-image">
