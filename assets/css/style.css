@@ -1325,6 +1325,7 @@ main {
   box-shadow: var(--shadow-4);
   border-radius: 16px;
   z-index: 1;
+  display: block; /* this might be necessary for layout */
 }
 
 .blog-post-item > a::before {
