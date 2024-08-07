@@ -261,6 +261,26 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
         projectLink = "https://github.com/brenmathew/ARIMA_Model";
         break
+       
+        case "Speech to Text Conversion":
+        modalDescription = "The Speech-to-Text project is a Python-based application that leverages the SpeechRecognition library to convert speech input into text. It allows users to provide pre-recorded audio files for transcription.";
+        newImageSrc = "./assets/images/project-90.png";
+        additionalContent = `
+          <div class="blog-image">
+            <img src="./assets/images/project-91.png" alt="Details" loading="lazy">
+          </div>
+          <p class="blog-description">Goals achieved:</p>
+          <ul class="blog-description">
+            <li>• **Integration of SpeechRecognition Library**: Incorporated the SpeechRecognition library to facilitate the conversion of speech to text.</li>
+            <li>• **Audio Input Handling**: Implemented functionality to handle both microphone input and pre-recorded audio files for transcription.</li>
+            <li>• **Speech Recognition Engine Selection**: Enabled users to choose from various speech recognition engines to enhance flexibility and accuracy.</li>
+          </ul>
+          <div class="blog-image">
+            <img src="./assets/images/project-92.png" alt="More Details" loading="lazy">
+          </div>
+        `;
+        projectLink = "https://github.com/brenmathew/Speech_to_Text_Conversion";
+        break
           
         default:
           modalDescription = `Detailed description of ${projectTitle}.`;
