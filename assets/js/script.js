@@ -240,6 +240,27 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
         projectLink = "https://github.com/brenmathew/Web_Scraping/tree/main";
         break;
+
+        case "Time Series Forecasting":
+        modalDescription = "This notebook provides a step-by-step implementation of the ARIMA model for time series forecasting";
+        newImageSrc = "./assets/images/project-80.png";
+        additionalContent = `
+          <div class="blog-image">
+            <img src="./assets/images/project-81.png" alt="Details" loading="lazy">
+          </div>
+          <p class="blog-description">Goals achieved:</p>
+          <ul class="blog-description">
+            <li>• Data Preprocessing</li>
+            <li>• Exploratory Data Analysis</li>
+            <li>• Implementation of the ARIMA model</li>
+            <li>• Forecasting using the trained ARIMA model</li>
+          </ul>
+          <div class="blog-image">
+            <img src="./assets/images/project-83.png" alt="More Details" loading="lazy">
+          </div>
+        `;
+        projectLink = "https://github.com/brenmathew/ARIMA_Model";
+        break
           
         default:
           modalDescription = `Detailed description of ${projectTitle}.`;
@@ -252,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Populate modal with specific project details
       modalContainer.classList.add("active");
       modalContainer.querySelector(".portfolio-modal-title").textContent = projectTitle;
-      modalContainer.querySelector(".modal-date").textContent = projectTitle === "Netflix" ? "Link to the entire project below:" : "Link to the entire project below: ";
+      modalContainer.querySelector(".modal-date").textContent = projectTitle === "Netflix" ? "Link to the entire project below" : "Link to the entire project below";
       modalContainer.querySelector(".portfolio-modal-content").textContent = modalDescription;
       modalContainer.querySelector(".modal-image img").src = newImageSrc;
       modalContainer.querySelector(".additional-content").innerHTML = additionalContent;
