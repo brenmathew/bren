@@ -218,6 +218,29 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
         projectLink = "https://github.com/brenmathew/Fraud_Detection/tree/main";
         break;   
+
+        case "Web Scraping":
+        modalDescription = "The purpose of the following project was to process textual data from a given website,
+          calculating the positive and negative score based on predefined set of values and extracting the articles to an output Excel file.";
+        newImageSrc = "./assets/images/project-70.png";
+        additionalContent = `
+          <div class="blog-image">
+            <img src="./assets/images/project-71.png" alt="Fraud Detection Details" loading="lazy">
+          </div>
+          <p class="blog-description">Tasks completed:</p>
+          <ul class="blog-description">
+            <li>• Data collection</li>
+            <li>• Data Cleaning</li>
+            <li>• Exploratory Data Analysis</li>
+            <li>• Statistical Modelling</li>
+            <li>• Reporting though an Excel file</li>
+          </ul>
+          <div class="blog-image">
+            <img src="./assets/images/project-72.png" alt="More Fraud Detection Details" loading="lazy">
+          </div>
+        `;
+        projectLink = "https://github.com/brenmathew/Web_Scraping/tree/main";
+        break;
           
         default:
           modalDescription = `Detailed description of ${projectTitle}.`;
