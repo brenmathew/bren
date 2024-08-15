@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
           projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/NetflixAnalysis_16769869059570/Netflix";
           break;
 
-         case "Amazon AWS":
+         case "Building an ML model using AWS":
           modalDescription = "The following project is built on Amazon Cloud. Here we have used the Sagemaker tool in AWS. AWS is capable of deploying Machine Learning models into the production environment, handling large LLM's depending on the company's requirements";
           newImageSrc = "./assets/images/project-30.jpg";
           additionalContent = `
