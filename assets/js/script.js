@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <p class="blog-description">This project is for AWS. Below are the key insights:</p>
             <p class="blog-description">• Created a new instance</p>
             <p class="blog-description">• Specified necessary roles for deploying the model</p>
-            <p class="blog-description">• Run Tensorflow Code in Jupyter notebook to test the model</p>
+            <p class="blog-description">• Ran Tensorflow Code in Jupyter notebook to test the model</p>
             <div class="blog-image">
               <img src="./assets/images/project-32.png" alt="Another Image" loading="lazy">
             </div>
