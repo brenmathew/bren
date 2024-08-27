@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <img src="./assets/images/project-102.png" alt="Another Image" loading="lazy">
           </div>
         `;
-        projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/CustomerAnalysis_16883802377440/Dashboard1";
+        projectLink = "https://github.com/brenmathew/Gender_Diversity";
         break;
           
        case "Fraud Detection":
